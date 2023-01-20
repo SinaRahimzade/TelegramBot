@@ -1,0 +1,12 @@
+spotify:
+  spotify_client_id: !secret spotify_client_id
+  spotify_client_secret: !secret spotify_client_secret
+  spotify_username: !secret spotify_username
+
+telegram:
+  app_id: !secret telegram_app_id
+  api_hash: !secret telegram_api_hash
+  proxy:
+    host: "localhost"
+    port: port
+  username: !secret telegram_username
