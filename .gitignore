@@ -164,3 +164,6 @@ cython_debug/
 
 # config shits
 config.yml
+
+# telethon shits
+*.session
