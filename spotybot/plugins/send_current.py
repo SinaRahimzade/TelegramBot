@@ -7,7 +7,7 @@ from typing import Dict
 
 def formatter(playback: Dict):
     # format playback data
-    return f"Artist: **{playback['item']['artists'][0]['name']}**\nSong: {playback['item']['name']}"
+    return f"Artist: **{playback['item']['artists'][0]['name']}**\nSong: **{playback['item']['name']}**\nAlbum: **{playback['item']['album']['name']}**\nAlbum url: {playback['item']['album']['external_urls']['spotify']}\nSong url: {playback['item']['external_urls']['spotify']}"
 
 
 async def send_current(bot: TelegramClient):
