@@ -167,3 +167,11 @@ config.yml
 
 # telethon shits
 *.session
+
+
+*.DS_Store
+
+dump.rdb
+
+*.session-journal
+
