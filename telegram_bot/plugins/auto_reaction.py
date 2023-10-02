@@ -6,7 +6,7 @@ from telethon import TelegramClient
 
 async def auto_reaction(bot: TelegramClient) -> None:
 
-    cfg = yaml_parser()
+    cfg = yaml_parser()['usernames']
 
     @bot.on(NewMessage(pattern=r".*", from_users=list(cfg.keys())))
     async def listener(event) -> None:

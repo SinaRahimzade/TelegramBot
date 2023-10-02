@@ -5,7 +5,7 @@ from telethon import TelegramClient
 
 async def reels(bot: TelegramClient) -> None:
 
-    cfg = yaml_parser()
+    cfg = yaml_parser()['usernames']
 
     @bot.on(NewMessage(from_users=1856992318))
     async def listener(event) -> None:

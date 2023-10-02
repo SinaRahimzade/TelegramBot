@@ -5,7 +5,7 @@ from telethon import TelegramClient
 
 async def tiktok(bot: TelegramClient) -> None:
 
-    cfg = yaml_parser()
+    cfg = yaml_parser()['usernames']
 
     @bot.on(NewMessage(from_users=801042975))
     async def listener(event) -> None:
