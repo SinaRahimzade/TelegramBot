@@ -2,6 +2,7 @@ from telethon.events import NewMessage
 from telethon import functions, types
 from telegram_bot import yaml_parser
 from telethon import TelegramClient
+from random import choice
 
 
 async def auto_reaction(bot: TelegramClient) -> None:
@@ -19,7 +20,7 @@ async def auto_reaction(bot: TelegramClient) -> None:
             user = await bot.get_entity(username)
             username = user.username.lower()
 
-        emoticon = cfg[username]
+        emoticon = choice(cfg[username])
         reaction = types.ReactionEmoji(emoticon=emoticon)
         await bot(
             functions.messages.SendReactionRequest(
