@@ -24,7 +24,7 @@ Finally install the requirements:
 pip install -r requirements.txt
 ```
 ## 3. Rename configs_template
-Rename the configs_template.yaml file to configs.yaml.
+Rename the configs_template.yaml file to configs.yaml
 ## 4. Edit configs.yaml
 ## 5. Run
 Activate the virtual environment in linux and macOS:
