@@ -1,0 +1,38 @@
+telegram_client:
+  username: null
+  api_id: null
+  api_hash: null
+  use_proxy: null
+  proxy:
+    host: null
+    port: null
+
+spotify_auth:
+  client_id: null
+  client_secret: null
+  redirect_uri: null
+  username: null
+
+genius_auth:
+  client_id: null
+  client_secret: null
+  access_token: null
+
+music_provider_id: null
+
+data_base: null
+
+# ---------------------------------- PLUGINS  CONFIGS ----------------------------------
+
+auto_reaction:
+  usernames:
+    <username_01>: "\U0001F595"
+    <username_02>: "\U0001F595"
+
+reels:
+  usernames:
+  - <username_01>
+
+tiktok:
+  usernames:
+  - <username_01>

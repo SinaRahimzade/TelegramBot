@@ -1,22 +1,32 @@
-from spotybot.plugins.config import ALL
-import yaml
+from telegram_bot import yaml_parser
 from telethon import TelegramClient
-import asyncio
+from telegram_bot import PLUGINS
 from socks import SOCKS5
+import asyncio
 
 
-async def main():
-    with open("config.yml", "r") as ymlfile:
-        cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)["telegram"]
+async def telegram_client() -> None:
 
-    proxy = (SOCKS5, cfg["proxy"]["host"], cfg["proxy"]["port"])
-    bot = TelegramClient(cfg["username"], cfg["app_id"], cfg["api_hash"], proxy=proxy)
+    """
+    This is the main function that runs the Telegram bot
+    """
+
+    cfg = yaml_parser()
+
+    bot = TelegramClient(
+        cfg['username'], 
+        cfg['api_id'], 
+        cfg['api_hash'], 
+        proxy=(SOCKS5, cfg['proxy']['host'], cfg['proxy']['port']) \
+            if cfg['use_proxy'] else None
+    )
+
     await bot.start()
-    print("Bot started")
-    for plugin in ALL:
-        asyncio.gather(plugin(bot))
+
+    asyncio.gather(*[plugin(bot) for plugin in PLUGINS])
+    
     await bot.run_until_disconnected()
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
+if __name__ == '__main__':
+    asyncio.run(telegram_client())
