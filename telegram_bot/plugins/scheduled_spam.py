@@ -2,6 +2,7 @@ from telegram_bot import yaml_parser
 from telethon import TelegramClient
 from datetime import datetime
 from pytz import timezone
+from copy import deepcopy
 import asyncio
 
 
@@ -47,6 +48,7 @@ async def scheduled_spam(bot: TelegramClient) -> None:
         tasks = []
         for username, configs_list in cfg.items():
             for config in configs_list:
+                config = deepcopy(config)
                 config_time = {
                     'minute': config.pop('minute', None),
                     'hour': config.pop('hour', None),
