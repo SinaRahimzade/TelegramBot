@@ -26,12 +26,122 @@ data_base: null
 
 auto_reaction:
   usernames:
-    <username_01>: "\U0001F595"
-    <username_02>: "\U0001F595"
+    <username_01>:
+      in_group_prob: 1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_02>:
+      in_group_prob: 0
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_03>:
+      in_group_prob: 0.1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_04>:
+      in_group_prob: 1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_05>:
+      in_group_prob: 0.1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_06>:
+      in_group_prob: 0
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_07>:
+      in_group_prob: 0
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_08>:
+      in_group_prob: 1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_09>:
+      in_group_prob: 0.1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_10>:
+      in_group_prob: 0.5
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_11>:
+      in_group_prob: 0
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_12>:
+      in_group_prob: 0.1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_13>:
+      in_group_prob: 0
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_14>:
+      in_group_prob: 1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
+    <username_15>:
+      in_group_prob: 1
+      in_private_prob: 1
+      private_reacts: <emoticon_1><emoticon_2>...
+      group_reacts: <emoticon_1><emoticon_2>...
 
 reels:
   usernames:
   - <username_01>
+
+spam:
+  usernames:
+    <username_01>:
+    - trigger_message: <trigger_message>
+      response_message: <response_message>
+      response_count: 8
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: true
+      sleep: 0.5
+    - trigger_message: <trigger_message>
+      response_message: <response_message>
+      response_count: 10
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: false
+      sleep: 0.5
+    <username_02>:
+    - trigger_message: <trigger_message>
+      response_message: <response_message>
+      response_count: 25
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: true
+      sleep: 0
+    <username_03>:
+    - trigger_message: <trigger_message>
+      response_message: <response_message>
+      response_count: 25
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: true
+      sleep: 0.2
+    <username_04>:
+    - trigger_message: <trigger_message>
+      response_message: <response_message>
+      response_count: 10
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: true
+      sleep: 0
 
 tiktok:
   usernames:
