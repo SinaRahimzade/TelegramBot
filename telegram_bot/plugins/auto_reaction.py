@@ -43,4 +43,4 @@ async def auto_reaction(bot: TelegramClient) -> None:
         )
 
 
-__ALL__ = [auto_reaction]
+__all__ = ['auto_reaction']

@@ -17,4 +17,4 @@ async def reels(bot: TelegramClient) -> None:
                     await bot.send_file(user, event.media)
 
 
-__ALL__ = [reels]
+__all__ = ['reels']

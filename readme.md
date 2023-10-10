@@ -2,13 +2,13 @@
 ## 1. Clone
 Clone the repository in your desired directory:
 ```bash
-git clone https://github.com/SinaRahimzade/spotybot.git
+git clone https://github.com/SinaRahimzade/TelegramBot.git
 ```
 ## 2. Making Virtual Environment
 Make a virtual environment in the directory:
 ```bash
 python -m pip install --user virtualenv
-cd spotybot
+cd TelegramBot
 virtualenv venv
 ```
 Activate the virtual environment in linux and macOS:

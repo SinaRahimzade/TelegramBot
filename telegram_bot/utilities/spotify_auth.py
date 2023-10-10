@@ -36,4 +36,4 @@ def spotify_auth() -> spotipy.Spotify:
     )
 
 
-__ALL__ = [spotify_auth]
+__all__ = ['spotify_auth']

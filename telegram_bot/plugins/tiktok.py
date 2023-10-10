@@ -17,4 +17,4 @@ async def tiktok(bot: TelegramClient) -> None:
                     await bot.send_file(user, event.media)
 
 
-__ALL__ = [tiktok]
+__all__ = ['tiktok']

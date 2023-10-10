@@ -6,16 +6,16 @@ import asyncio
 
 async def spam(bot: TelegramClient) -> None:
 
-    cfg = yaml_parser()
+    cfg = yaml_parser()['usernames']
 
-    @bot.on(NewMessage(chats=list(cfg['usernames']), outgoing=True))
+    @bot.on(NewMessage(chats=list(cfg), outgoing=True))
     async def listener(event) -> None:
 
         receiver_id = event.message.to_id.user_id
         username = await bot.get_entity(receiver_id)
         username = username.username
 
-        for plan in cfg['usernames'][username.lower()]:
+        for plan in cfg[username.lower()]:
             if event.message.text.startswith(plan['trigger_message']):
                 for i in range(plan['response_count']):
                     if plan['sleep'] != 0:
@@ -41,4 +41,4 @@ async def spam(bot: TelegramClient) -> None:
                     )
 
 
-__ALL__ = [spam]
+__all__ = ['spam']

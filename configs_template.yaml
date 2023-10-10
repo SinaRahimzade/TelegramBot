@@ -143,6 +143,32 @@ spam:
       reverse: true
       sleep: 0
 
+scheduled_spam:
+  timezone: null
+  usernames:
+    <username_01>:
+    - minute: 0
+      hour: 21
+      day: null
+      month: null
+      year: null
+      response_message: <response_message>
+      response_count: 10
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: true
+      sleep: 0
+    <username_02>:
+    - minute: 0
+      hour: 21
+      day: null
+      month: null
+      year: null
+      response_message: <response_message>
+      response_count: 5
+      mutiple_character: <character_to_duplicate_in_each_respond>
+      reverse: false
+      sleep: 0
+
 tiktok:
   usernames:
   - <username_01>

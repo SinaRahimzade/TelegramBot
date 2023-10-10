@@ -1,3 +1,4 @@
+from telegram_bot.plugins.scheduled_spam import scheduled_spam
 from telegram_bot.plugins.auto_reaction import auto_reaction
 from telegram_bot.plugins.tiktok import tiktok
 from telegram_bot.plugins.reels import reels
@@ -6,12 +7,13 @@ from typing import List, Callable
 
 
 PLUGINS: List[Callable] = [
+    scheduled_spam,
     auto_reaction,
     reels, 
     tiktok,
     spam,
 ]
 
-__ALL__ = [
-    PLUGINS,
+__all__ = [
+    'PLUGINS',
 ]
