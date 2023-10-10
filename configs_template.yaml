@@ -102,9 +102,11 @@ auto_reaction:
       private_reacts: <emoticon_1><emoticon_2>...
       group_reacts: <emoticon_1><emoticon_2>...
 
-reels:
-  usernames:
-  - <username_01>
+instagram:
+  bot: null
+  pattern: null
+  wait_for_response: null
+  response_count: null
 
 spam:
   usernames:
@@ -114,12 +116,6 @@ spam:
       response_count: 8
       mutiple_character: <character_to_duplicate_in_each_respond>
       reverse: true
-      sleep: 0.5
-    - trigger_message: <trigger_message>
-      response_message: <response_message>
-      response_count: 10
-      mutiple_character: <character_to_duplicate_in_each_respond>
-      reverse: false
       sleep: 0.5
     <username_02>:
     - trigger_message: <trigger_message>
@@ -135,13 +131,36 @@ spam:
       mutiple_character: <character_to_duplicate_in_each_respond>
       reverse: true
       sleep: 0.2
-    <username_04>:
-    - trigger_message: <trigger_message>
-      response_message: <response_message>
-      response_count: 10
-      mutiple_character: <character_to_duplicate_in_each_respond>
-      reverse: true
-      sleep: 0
+
+global_spam:
+
+- trigger_message: <trigger_message>
+  response_message: <response_message>
+  response_count: null
+  mutiple_character: <character_to_duplicate_in_each_respond>
+  reverse: null
+  sleep: null
+
+- trigger_message: <trigger_message>
+  response_message: <response_message>
+  response_count: null
+  mutiple_character: <character_to_duplicate_in_each_respond>
+  reverse: null
+  sleep: null
+
+- trigger_message: <trigger_message>
+  response_message: <response_message>
+  response_count: null
+  mutiple_character: <character_to_duplicate_in_each_respond>
+  reverse: null
+  sleep: null
+
+- trigger_message: <trigger_message>
+  response_message: <response_message>
+  response_count: null
+  mutiple_character: <character_to_duplicate_in_each_respond>
+  reverse: null
+  sleep: null
 
 scheduled_spam:
   timezone: null
