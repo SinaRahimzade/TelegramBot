@@ -1,3 +1,4 @@
+from telegram_bot.plugins.round_time_spam import round_time_spam
 from telegram_bot.plugins.scheduled_spam import scheduled_spam
 from telegram_bot.plugins.auto_reaction import auto_reaction
 from telegram_bot.plugins.global_spam import global_spam
@@ -9,6 +10,7 @@ from typing import List, Callable
 
 
 PLUGINS: List[Callable] = [
+    round_time_spam,
     scheduled_spam,
     auto_reaction,
     global_spam,
