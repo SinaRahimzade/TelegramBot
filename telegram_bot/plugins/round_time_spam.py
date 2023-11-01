@@ -70,7 +70,7 @@ async def round_time_spam(bot: TelegramClient) -> None:
                     ))
                     
         await asyncio.gather(*tasks)
-        await asyncio.sleep(30)
+        await asyncio.sleep(20)
 
 
 __all__ = ['round_time_spam']
